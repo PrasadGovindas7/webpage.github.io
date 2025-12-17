@@ -5,124 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Semester 1 Applications</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS File -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="header">
-    <h3 class="logo">AECC</h3>
-    <button class="btn-primary">Apply Now</button>
+    <div class="logo">aecc</div>
+    <button class="apply-btn">APPLY NOW</button>
   </header>
 
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-container">
 
+      <!-- LEFT CONTENT -->
       <div class="hero-text">
-        <h1>Semester 1 applications are open now!</h1>
-        <p>Here's why you should apply:</p>
+        <h1>
+          Semester 1<br>
+          applications are<br>
+          open now!
+        </h1>
+
+        <p class="subheading">Here’s why you should apply:</p>
+
         <ul>
           <li>Study at globally ranked institutions</li>
-          <li>Boost your chances of receiving PR in Australia</li>
+          <li>Boost your chances of receiving a PR in Australia</li>
           <li>Get massive scholarships</li>
           <li>Accelerate your career growth</li>
         </ul>
       </div>
 
-      <!-- FORM -->
+      <!-- FORM CARD -->
       <div class="form-card">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email">
-        <input type="tel" placeholder="Mobile Number">
+        <div class="form-group">
+          <label>First Name <span>*</span></label>
+          <input type="text">
+        </div>
 
-        <select>
-          <option>Nearest Office</option>
-        </select>
+        <div class="form-group">
+          <label>Last Name <span>*</span></label>
+          <input type="text">
+        </div>
 
-        <select>
-          <option>Country of Passport</option>
-        </select>
+        <div class="form-group">
+          <label>Email <span>*</span></label>
+          <input type="email">
+        </div>
 
-        <button class="btn-secondary">Apply Now</button>
+        <div class="form-group">
+          <label>Mobile Number <span>*</span></label>
+          <input type="tel" placeholder="+61">
+        </div>
+
+        <div class="form-group">
+          <label>Nearest Office <span>*</span></label>
+          <select>
+            <option>Select</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Country of Passport <span>*</span></label>
+          <select>
+            <option>Select</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>I’m interested in <span>*</span></label>
+          <select>
+            <option>Select</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" checked>
+          <p>Yes, I’d like to be contacted by aecc to get help with my enquiry</p>
+        </div>
+
+        <button class="submit-btn">Apply Now</button>
       </div>
 
     </div>
   </section>
-
-  <!-- WHY APPLY -->
-  <section class="why">
-    <h2>Why apply for Semester 1?</h2>
-
-    <div class="why-grid">
-      <div class="why-card">Affordable Courses</div>
-      <div class="why-card">Exciting Scholarships</div>
-      <div class="why-card">Flexible Payments</div>
-      <div class="why-card">Curated Course List</div>
-      <div class="why-card">Faster Processing</div>
-      <div class="why-card">Flexible Intakes</div>
-    </div>
-  </section>
-
-  <!-- SCHOLARSHIPS -->
-  <section class="scholarships">
-    <h2>Scholarships for International Students</h2>
-
-    <div class="logos">
-      <div class="logo-box">Griffith University</div>
-      <div class="logo-box">University of Sydney</div>
-      <div class="logo-box">Monash University</div>
-      <div class="logo-box">Murdoch University</div>
-      <div class="logo-box">University of Tasmania</div>
-      <div class="logo-box">University of Adelaide</div>
-    </div>
-
-    <button class="btn-primary">Apply Now</button>
-  </section>
-
-  <!-- COURSES -->
-  <section class="courses">
-    <h2>Popular Courses</h2>
-
-    <div class="course-grid">
-      <ul>
-        <li>Engineering</li>
-        <li>Information Technology</li>
-        <li>Social Work</li>
-      </ul>
-
-      <ul>
-        <li>Nursing</li>
-        <li>Teaching</li>
-        <li>Master of Business Administration</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h2>What students are saying about us…</h2>
-
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        “Great service and guidance throughout the process.”
-      </div>
-
-      <div class="testimonial">
-        “Professional support with visa and university selection.”
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 AECC Global</p>
-  </footer>
 
 </body>
 </html>
