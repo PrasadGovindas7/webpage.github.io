@@ -4,272 +4,125 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Semester 1 Applications</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0b1b4d;
-      --secondary: #57f0d6;
-      --bg-light: #eafffa;
-      --text-dark: #0f172a;
-      --card: #ffffff;
-    }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: white;
-      color: var(--text-dark);
-      line-height: 1.6;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header button {
-      background: white;
-      color: var(--primary);
-      border: none;
-      padding: 0.5rem 1.2rem;
-      border-radius: 20px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    /* ===== HERO ===== */
-    .hero {
-      background: var(--secondary);
-      padding: 4rem 2rem;
-    }
-
-    .hero-container {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 2.6rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero ul {
-      margin-top: 1rem;
-      padding-left: 1.2rem;
-    }
-
-    /* ===== FORM ===== */
-    .form-card {
-      background: linear-gradient(180deg, #1b2a6b, #0b1b4d);
-      padding: 2rem;
-      border-radius: 16px;
-      color: white;
-    }
-
-    .form-card input,
-    .form-card select {
-      width: 100%;
-      padding: 0.6rem;
-      margin-bottom: 0.7rem;
-      border-radius: 6px;
-      border: none;
-    }
-
-    .form-card button {
-      width: 100%;
-      background: var(--secondary);
-      border: none;
-      padding: 0.7rem;
-      border-radius: 8px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    /* ===== WHY APPLY ===== */
-    .why {
-      background: var(--bg-light);
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .why-grid {
-      max-width: 1100px;
-      margin: 3rem auto 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-    }
-
-    .why-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    /* ===== SCHOLARSHIPS ===== */
-    .scholarships {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .logos {
-      max-width: 1000px;
-      margin: 2rem auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
-      align-items: center;
-    }
-
-    .logo {
-      background: #f8fafc;
-      padding: 1.2rem;
-      border-radius: 12px;
-      font-weight: 600;
-    }
-
-    /* ===== COURSES ===== */
-    .courses {
-      background: var(--bg-light);
-      padding: 4rem 2rem;
-    }
-
-    .course-grid {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    /* ===== TESTIMONIALS ===== */
-    .testimonials {
-      padding: 4rem 2rem;
-    }
-
-    .testimonial-grid {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .testimonial {
-      background: white;
-      padding: 1.8rem;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: black;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero-container { grid-template-columns: 1fr; }
-    }
-  </style>
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h3>AECC</h3>
-  <button>Apply Now</button>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <h3 class="logo">AECC</h3>
+    <button class="btn-primary">Apply Now</button>
+  </header>
 
-<section class="hero">
-  <div class="hero-container">
-    <div>
-      <h1>Semester 1 applications are open now!</h1>
-      <p>Here's why you should apply:</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+
+      <div class="hero-text">
+        <h1>Semester 1 applications are open now!</h1>
+        <p>Here's why you should apply:</p>
+        <ul>
+          <li>Study at globally ranked institutions</li>
+          <li>Boost your chances of receiving PR in Australia</li>
+          <li>Get massive scholarships</li>
+          <li>Accelerate your career growth</li>
+        </ul>
+      </div>
+
+      <!-- FORM -->
+      <div class="form-card">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Mobile Number">
+
+        <select>
+          <option>Nearest Office</option>
+        </select>
+
+        <select>
+          <option>Country of Passport</option>
+        </select>
+
+        <button class="btn-secondary">Apply Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY APPLY -->
+  <section class="why">
+    <h2>Why apply for Semester 1?</h2>
+
+    <div class="why-grid">
+      <div class="why-card">Affordable Courses</div>
+      <div class="why-card">Exciting Scholarships</div>
+      <div class="why-card">Flexible Payments</div>
+      <div class="why-card">Curated Course List</div>
+      <div class="why-card">Faster Processing</div>
+      <div class="why-card">Flexible Intakes</div>
+    </div>
+  </section>
+
+  <!-- SCHOLARSHIPS -->
+  <section class="scholarships">
+    <h2>Scholarships for International Students</h2>
+
+    <div class="logos">
+      <div class="logo-box">Griffith University</div>
+      <div class="logo-box">University of Sydney</div>
+      <div class="logo-box">Monash University</div>
+      <div class="logo-box">Murdoch University</div>
+      <div class="logo-box">University of Tasmania</div>
+      <div class="logo-box">University of Adelaide</div>
+    </div>
+
+    <button class="btn-primary">Apply Now</button>
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses">
+    <h2>Popular Courses</h2>
+
+    <div class="course-grid">
       <ul>
-        <li>Study at globally ranked institutions</li>
-        <li>Boost your chances of receiving PR in Australia</li>
-        <li>Get massive scholarships</li>
-        <li>Accelerate your career growth</li>
+        <li>Engineering</li>
+        <li>Information Technology</li>
+        <li>Social Work</li>
+      </ul>
+
+      <ul>
+        <li>Nursing</li>
+        <li>Teaching</li>
+        <li>Master of Business Administration</li>
       </ul>
     </div>
+  </section>
 
-    <div class="form-card">
-      <input placeholder="First Name" />
-      <input placeholder="Last Name" />
-      <input placeholder="Email" />
-      <input placeholder="Mobile Number" />
-      <select><option>Nearest Office</option></select>
-      <select><option>Country of Passport</option></select>
-      <button>Apply Now</button>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>What students are saying about us…</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        “Great service and guidance throughout the process.”
+      </div>
+
+      <div class="testimonial">
+        “Professional support with visa and university selection.”
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="why">
-  <h2>Why apply for Semester 1?</h2>
-  <div class="why-grid">
-    <div class="why-card">Affordable Courses</div>
-    <div class="why-card">Exciting Scholarships</div>
-    <div class="why-card">Flexible Payments</div>
-    <div class="why-card">Curated Course List</div>
-    <div class="why-card">Faster Processing</div>
-    <div class="why-card">Flexible Intakes</div>
-  </div>
-</section>
-
-<section class="scholarships">
-  <h2>Scholarships for International Students</h2>
-  <div class="logos">
-    <div class="logo">Griffith University</div>
-    <div class="logo">University of Sydney</div>
-    <div class="logo">Monash University</div>
-    <div class="logo">Murdoch University</div>
-    <div class="logo">University of Tasmania</div>
-    <div class="logo">University of Adelaide</div>
-  </div>
-  <button>Apply Now</button>
-</section>
-
-<section class="courses">
-  <h2 style="text-align:center;">Popular Courses</h2>
-  <div class="course-grid">
-    <ul>
-      <li>Engineering</li>
-      <li>Information Technology</li>
-      <li>Social Work</li>
-    </ul>
-    <ul>
-      <li>Nursing</li>
-      <li>Teaching</li>
-      <li>MBA</li>
-    </ul>
-  </div>
-</section>
-
-<section class="testimonials">
-  <h2>What students are saying about us…</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial">"Great service and guidance throughout the process."</div>
-    <div class="testimonial">"Professional support with visa and university selection."</div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 AECC Global</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 AECC Global</p>
+  </footer>
 
 </body>
 </html>
