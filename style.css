@@ -1,10 +1,19 @@
+/* =====================================================
+   GLOBAL VARIABLES
+===================================================== */
 :root {
   --dark-blue: #14005c;
   --mint: #63f5d7;
+  --purple: #6d5dfc;
+  --dark: #0f172a;
+  --gray: #6b7280;
+  --bg: #f5f6f8;
   --white: #ffffff;
-  --text-dark: #0f172a;
 }
 
+/* =====================================================
+   RESET & BASE
+===================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +22,14 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
 }
 
-/* HEADER */
+/* =====================================================
+   HEADER (LANDING PAGE)
+===================================================== */
 .header {
   background: var(--dark-blue);
   padding: 1rem 3rem;
@@ -25,13 +39,13 @@ body {
 }
 
 .logo {
-  color: white;
+  color: var(--white);
   font-size: 1.8rem;
   font-weight: 800;
 }
 
 .apply-btn {
-  background: white;
+  background: var(--white);
   color: var(--dark-blue);
   border: none;
   padding: 0.5rem 1.6rem;
@@ -40,7 +54,9 @@ body {
   cursor: pointer;
 }
 
-/* HERO */
+/* =====================================================
+   HERO SECTION
+===================================================== */
 .hero {
   background: var(--mint);
   padding: 4rem 3rem;
@@ -54,9 +70,9 @@ body {
   gap: 3rem;
 }
 
-/* LEFT */
+/* LEFT CONTENT */
 .hero-text h1 {
-  font-size: 6.0rem;
+  font-size: 5.5rem;
   font-weight: 800;
   color: var(--dark-blue);
   line-height: 1.1;
@@ -75,12 +91,14 @@ body {
   margin-bottom: 0.6rem;
 }
 
-/* FORM */
+/* =====================================================
+   FORM CARD
+===================================================== */
 .form-card {
   background: linear-gradient(180deg, #1b0a7a, #14005c);
   padding: 2rem;
   border-radius: 16px;
-  color: white;
+  color: var(--white);
 }
 
 .form-group {
@@ -122,13 +140,161 @@ body {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* =====================================================
+   TOP BAR (VIDEO LIBRARY)
+===================================================== */
+.top-bar {
+  background: #111;
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.top-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login-btn {
+  border: 1px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* =====================================================
+   VIDEO SECTION
+===================================================== */
+.section {
+  padding: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+
+/* =====================================================
+   CARD ROW
+===================================================== */
+.card-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+.card {
+  min-width: 280px;
+  background: var(--white);
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top {
+  height: 6px;
+  background: var(--purple);
+}
+
+/* CARD BODY */
+.card-body {
+  padding: 1.2rem;
+}
+
+.tag {
+  color: var(--purple);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.level {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin: 0.6rem 0;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* CARD FOOTER */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer button {
+  background: var(--white);
+  border: 1px solid var(--dark);
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* =====================================================
+   SCROLLBAR (OPTIONAL)
+===================================================== */
+.card-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.card-row::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 @media (max-width: 900px) {
   .hero-container {
     grid-template-columns: 1fr;
   }
 
   .hero-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .section {
+    padding: 1.5rem;
   }
 }
